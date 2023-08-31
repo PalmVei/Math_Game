@@ -1,0 +1,155 @@
+*{
+    font-family: 'Phudu', cursive;
+    font-size: 20px;
+}
+
+h1{
+    color: #000000;
+    font-size: 30px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 180px auto auto auto;
+    padding: 20px;
+    background-color: #b8b8b8;
+    border-radius: 70px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.586);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+    text-align: right;
+}
+
+#StartB {
+    font-size: 25px;
+    padding: 10px 20px;
+    background-color: #008a23;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#score {
+    font-weight: bolder;
+    color: #fff;
+}
+
+.question {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.in_num {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.equal {
+    font-size: 24px;
+    color: #fff;
+}
+
+.operator {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.operator label {
+    font-size: 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.operator input:checked + label {
+    color: #007bff;
+}
+
+.in_num {
+    width: 200px; 
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 0 10px;
+}
+
+#radiOT {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.operator-text {
+    display: inline; 
+}
+
+#AnsB {
+    display: block; 
+    padding: 10px 20px;
+    background-color: #a40000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto; 
+}
+
+#Result_T {
+    text-align: center; 
+    color: #2b2b2b;
+}
+
+/* ------------- For phone ----------- */ 
+@media (max-width: 750px) {
+    .container {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .header {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        flex: none;
+    }
+
+    .in_num {
+        width: auto;
+    }
+
+    .question, .equal, .operator-text, #Ans, .radiOT {
+        display: block;
+    }
+
+    #Ans {
+        margin: 0 auto;
+    }
+
+@media (min-width: 500px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+ }
+}

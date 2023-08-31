@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Math_Fun </title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button id="StartB"> Start!! </button>
+            <h1> Maths Fun </h1>
+            <div id="score">0/0</div>
+        </div>
+        <div class="question">
+            <input type="Num" id="P1" class="in_num" disabled>
+            <div class="operator-text">
+                <span id="radiOT">+</span>
+            </div>
+            <input type="Num" id="P2" class="in_num" disabled>
+            <label class="equal">=</label>
+            <input type="Num" id="Ans" class="in_num">
+        </div>
+        <div class="operator">
+            <label>
+                <input type="radio" name="operator" value="Plus" checked> +
+            </label>
+            <label>
+                <input type="radio" name="operator" value="Minus" checked> -
+            </label>
+            <label>
+                <input type="radio" name="operator" value="Multiply"> x
+            </label>
+            <label>
+                <input type="radio" name="operator" value="Divide"> ÷ 
+            </label>
+        </div>
+        
+        <button id="AnsB">Answer</button>
+        <div class="result">
+            <p id="Result_T"></p>
+        </div>
+    </div>
+    <script src="./Java.js"></script>
+</body>
+</html>
